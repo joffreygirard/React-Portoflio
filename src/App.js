@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import { Grommet, Image, Header, Button, Menu, Box, Text, Heading, Avatar, Footer, Nav, Anchor, Card, CardFooter, CardBody, CardHeader } from 'grommet';
-import { Home, Book, Phone, Info, Workshop, FormDown, Facebook, Instagram, Linkedin, Github, Attraction } from 'grommet-icons';
+import {Grommet, } from 'grommet';
+import {  } from 'grommet-icons';
 
 import MyHeader from "./components/MyHeader";
 import MyCard from "./components/MyCard";
 import MyFooter from "./components/MyFooter";
+import MyWorkExperiences from "./components/MyWorkExperiences";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Grommet themeMode="dark">
             <MyHeader/>
             <MyCard/>
+            <MyWorkExperiences/>
             <MyFooter/>
         </Grommet>
     );
