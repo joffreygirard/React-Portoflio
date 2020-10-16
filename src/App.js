@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import { Grommet, Header, Button, Menu, Box, Text, Heading, Avatar, Footer, Nav, Anchor } from 'grommet';
-import { Home, Book, Phone, Info, Workshop, FormDown, Facebook, Instagram, Linkedin, Github,  } from 'grommet-icons';
+import { Grommet, Image, Header, Button, Menu, Box, Text, Heading, Avatar, Footer, Nav, Anchor, Card, CardFooter, CardBody, CardHeader } from 'grommet';
+import { Home, Book, Phone, Info, Workshop, FormDown, Facebook, Instagram, Linkedin, Github, Attraction } from 'grommet-icons';
 
 function MyMenu() {
     return (
@@ -31,6 +31,15 @@ function MyMenu() {
                       icon: (
                           <Box pad="medium">
                               <Info size="medium" />
+                          </Box>
+                      ),
+                  },
+                  {
+                      label: <Box alignSelf="center">Mes Loisirs</Box>,
+                      onClick: () => {},
+                      icon: (
+                          <Box pad="medium">
+                              <Attraction size="medium" />
                           </Box>
                       ),
                   },
@@ -72,6 +81,27 @@ function MyHeader() {
     );
 }
 
+function MyCard() {
+    return (
+        <Box align="center" direction="column" margin="75px">
+            <Image
+                    className="radius-small"
+                    src="https://media-exp1.licdn.com/dms/image/C4D03AQEDtJhDKPW4Aw/profile-displayphoto-shrink_200_200/0?e=1608163200&v=beta&t=mlNS28FhuTcL5Y0Plxn3QNGdPoz3rz-jBi4dV_3ShNM"
+            />
+
+            <Text margin="30px 0 0 0" textAlign="center">
+                Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour
+                calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que
+                la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.
+            </Text>
+
+            <Button primary
+                    margin="30px 0 0 0"
+                    label="Contactez moi !"
+            />
+        </Box>
+    );
+}
 
 function MyFooter() {
     return (
@@ -91,9 +121,9 @@ function MyFooter() {
 
 function App() {
     return (
-        <Grommet className="App" themeMode="dark">
+        <Grommet themeMode="dark">
             <MyHeader/>
-            <Box height="large" />
+            <MyCard/>
             <MyFooter/>
         </Grommet>
     );
