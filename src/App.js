@@ -7,6 +7,7 @@ import MyHeader from "./components/MyHeader";
 import MyCard from "./components/MyCard";
 import MyFooter from "./components/MyFooter";
 import MyWorkExperiences from "./components/MyWorkExperiences";
+import MyEducations from "./components/MyEducations";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <MyHeader/>
             <MyCard/>
             <MyWorkExperiences/>
+            <MyEducations/>
             <MyFooter/>
         </Grommet>
     );
