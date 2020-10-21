@@ -1,10 +1,15 @@
 import React from 'react';
 import '../App.css';
-import {Box, Grid, Heading, Image, Tab, Text} from "grommet";
-import logo_bldeveloppement from "../images/logo_bldeveloppement.png";
+import {Box, Grid, Heading, Image, Button, Text, Layer} from "grommet";
 
 
 function MyWorkExperience(props) {
+
+    const [showCompany, setShowCompany] = React.useState();
+    const [showLinkedin, setShowLinkedin] = React.useState();
+
+    let company = props.companyDetails;
+
     return (
             <Grid rows={["large"]}
                   columns={['40%', 'auto']}
@@ -17,12 +22,13 @@ function MyWorkExperience(props) {
                 <Box gridArea="work-title" background="light-5">
                     <Box align="center" direction="column" margin="10%">
                         <Image
-                            src={logo_bldeveloppement}
+                            src={company.logo}
                         />
 
-                        <Heading size="small" margin="0 0 0 0" textAlign="center">{props.companyName}</Heading>
+                        <Heading size="small" margin="0 0 0 0" textAlign="center">{company.name}</Heading>
 
-                        <Text margin="30px 0 0 0" textAlign="center">Alternant Développeur Web FullStack</Text>
+                        <Text margin="30px 0 0 0" textAlign="center">{company.positionTitle}</Text>
+                        <Text textAlign="center">{company.positionDescription}</Text>
 
                         <Text margin="30px 0 0 0" textAlign="center">Sept. 2019 - Sept. 2020</Text>
                         <Text textAlign="center">En cours</Text>
@@ -30,7 +36,33 @@ function MyWorkExperience(props) {
                 </Box>
 
                 <Box background="light-2" gridArea="work-content">
-                    Content 1
+                    <Box align="center" direction="column" margin="10%">
+                        <Text>Description du poste occupé et principale missions</Text>
+
+                        <Text>Technologies utilisées</Text>
+
+                        <Box direction="row">
+                            <Button label="En savoir plus sur l'entreprise" onClick={() => setShowCompany(true)} />
+                            {showCompany && (
+                                <Layer
+                                    onEsc={() => setShowCompany(false)}
+                                    onClickOutside={() => setShowCompany(false)}
+                                >
+                                    <Button label="close" onClick={() => setShowCompany(false)} />
+                                </Layer>
+                            )}
+
+                            <Button label="En savoir plus sur mon compte LinkedIn" onClick={() => setShowLinkedin(true)} />
+                            {showLinkedin && (
+                                <Layer
+                                    onEsc={() => setShowLinkedin(false)}
+                                    onClickOutside={() => setShowLinkedin(false)}
+                                >
+                                    <Button label="fermer" onClick={() => setShowLinkedin(false)} />
+                                </Layer>
+                            )}
+                        </Box>
+                    </Box>
                 </Box>
 
             </Grid>
