@@ -9,6 +9,7 @@ import MyFooter from "./components/MyFooter";
 import MyWorkExperiences from "./components/MyWorkExperiences";
 import MyEducations from "./components/MyEducations";
 import MySkills from "./components/MySkills";
+import MyHobbies from "./components/MyHobbies";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <MyWorkExperiences/>
             <MyEducations/>
             <MySkills/>
+            <MyHobbies/>
             <MyFooter/>
         </Grommet>
     );
