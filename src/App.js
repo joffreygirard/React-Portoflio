@@ -8,6 +8,7 @@ import MyCard from "./components/MyCard";
 import MyFooter from "./components/MyFooter";
 import MyWorkExperiences from "./components/MyWorkExperiences";
 import MyEducations from "./components/MyEducations";
+import MySkills from "./components/MySkills";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <MyCard/>
             <MyWorkExperiences/>
             <MyEducations/>
+            <MySkills/>
             <MyFooter/>
         </Grommet>
     );
