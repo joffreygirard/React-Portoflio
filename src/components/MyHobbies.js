@@ -18,7 +18,7 @@ function MyHobbies() {
         >
 
             <Box gridArea="hobby-title" background="light-2">
-
+                <Heading textAlign="center">Mes Loisirs</Heading>
             </Box>
 
             <Box gridArea="hobby-sports" background="light-5">

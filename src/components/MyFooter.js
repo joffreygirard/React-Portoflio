@@ -7,6 +7,7 @@ function MyFooter() {
     return (
         <Footer background="brand" pad="small">
             <Box />
+
             <Nav direction="row" background="brand" pad="small">
                 <Anchor icon={<Facebook />} href="https://fr-fr.facebook.com" title="Facebook" hoverIndicator />
                 <Anchor icon={<Instagram />} href="https://www.instagram.com/?hl=fr" title="Instagram" hoverIndicator />
@@ -14,6 +15,7 @@ function MyFooter() {
                 <Anchor icon={<Github />} href="https://github.com/joffreygirard" title="Github" hoverIndicator />
                 <Anchor icon={<Github />} href="https://gitlab.com/joffreygirard" title="GitLab" hoverIndicator />
             </Nav>
+
             <Box />
         </Footer>
     );

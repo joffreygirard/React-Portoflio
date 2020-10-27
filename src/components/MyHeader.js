@@ -12,7 +12,7 @@ function MyHeader() {
 
             <Anchor href="#" title="Accueil" hoverIndicator>
                 <Heading margin="none" size="small">
-                    Portfolio de Joffrey Girard
+                    Joffrey Girard
                 </Heading>
             </Anchor>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { Tab, Tabs, } from "grommet";
+import { Tab, Tabs, Box, Heading} from "grommet";
 import logo_bldeveloppement from "../images/logo_bldeveloppement.png";
 
 import MyWorkExperience from "./MyWorkExperience";
@@ -47,9 +47,12 @@ const experiences_tabs = experiences.map((company) =>
 
 function MyWorkExperiences() {
     return (
-        <Tabs>
-            {experiences_tabs}
-        </Tabs>
+        <Box>
+            <Heading textAlign="center">Mes Expériences Professionnelles</Heading>
+            <Tabs>
+                {experiences_tabs}
+            </Tabs>
+        </Box>
     );
 }
 

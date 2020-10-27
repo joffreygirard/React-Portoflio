@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { Tab, Tabs, } from "grommet";
+import {Heading, Tab, Tabs, Box} from "grommet";
 import logo_bldeveloppement from "../images/logo_bldeveloppement.png";
 
 import MyEducation from "./MyEducation";
@@ -47,9 +47,13 @@ const educations_tabs = educations.map((school) =>
 
 function MyEducations() {
     return (
-        <Tabs>
-            {educations_tabs}
-        </Tabs>
+        <Box>
+            <Heading textAlign="center">Ma Formation</Heading>
+            <Tabs>
+                {educations_tabs}
+            </Tabs>
+        </Box>
+
     );
 }
 
