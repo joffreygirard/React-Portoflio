@@ -41,3 +41,6 @@
 .radius-small {
     border-radius: 12px;
 }
+.image_max_width_100 {
+    max-width: 100%;
+}
