@@ -1,7 +1,8 @@
 import React from 'react';
 import '../App.css';
 import {Heading, Box, Grid, Text, Form, FormField, TextInput, Button, TextArea, Select} from "grommet";
-import {Map, Phone, MailOption} from "grommet-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faMapMarker, faPhone, faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 
 function MyContact() {
@@ -21,18 +22,21 @@ function MyContact() {
             >
 
                 <Box gridArea="contact-address" background="light-2" direction="column">
-                    <Text textAlign="center"><Map/></Text>
-                    <Text textAlign="center">27 Chemin de la Garonne 31200 TOULOUSE</Text>
+                    <Text textAlign="center"><FontAwesomeIcon icon={faMapMarker} size="4x" /></Text>
+                    <Box direction="column" margin="30px 0 0 0">
+                        <Text textAlign="center">27 Chemin de la Garonne</Text>
+                        <Text textAlign="center">31200 TOULOUSE</Text>
+                    </Box>
                 </Box>
 
                 <Box gridArea="contact-mail" background="light-2" direction="column">
-                    <Text textAlign="center"><MailOption/></Text>
-                    <Text textAlign="center">joffrey.girard2@gmail.com</Text>
+                    <Text textAlign="center"><FontAwesomeIcon icon={faEnvelope} size="4x" /></Text>
+                    <Text textAlign="center" margin="30px 0 0 0">joffrey.girard2@gmail.com</Text>
                 </Box>
 
                 <Box gridArea="contact-phone" background="light-2" direction="column">
-                    <Text textAlign="center"><Phone/></Text>
-                    <Text textAlign="center">06.83.65.08.15</Text>
+                    <Text textAlign="center"><FontAwesomeIcon icon={faPhone} size="4x" /></Text>
+                    <Text textAlign="center" margin="30px 0 0 0">06.83.65.08.15</Text>
                 </Box>
 
             </Grid>

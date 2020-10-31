@@ -1,7 +1,8 @@
 import React from 'react';
 import '../App.css';
 import {Box, Text} from "grommet";
-import {Attraction} from "grommet-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faChess} from "@fortawesome/free-solid-svg-icons";
 
 
 function MySkill(props) {
@@ -11,7 +12,7 @@ function MySkill(props) {
     return (
         <Box pad="xlarge" align="center">
             <Text>{skill.name}</Text>
-            <Attraction size="xlarge" />
+            <FontAwesomeIcon icon={faChess} size="4x" />
         </Box>
     );
 }

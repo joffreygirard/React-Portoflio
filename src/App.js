@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import {Grommet, } from 'grommet';
-import {  } from 'grommet-icons';
 
 import MyHeader from "./components/MyHeader";
 import MyCard from "./components/MyCard";

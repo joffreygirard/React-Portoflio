@@ -1,8 +1,6 @@
 import React from "react";
 import '../App.css';
-import {Box, Button, Grid, Heading, Image, Layer, Text,} from "grommet";
-import {} from "grommet-icons";
-
+import {Box, Grid, Heading,} from "grommet";
 
 
 function MyHobbies() {

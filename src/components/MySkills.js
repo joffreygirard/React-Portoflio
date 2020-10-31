@@ -1,7 +1,6 @@
 import React from "react";
 import '../App.css';
 import {Box, Carousel, Text, Heading, Tab} from "grommet";
-import {} from "grommet-icons";
 import MySkill from "./MySkill";
 
 

@@ -1,7 +1,9 @@
 import React from 'react';
 import '../App.css';
 import {Box, Menu} from "grommet";
-import {Attraction, Book, FormDown, Home, Info, Phone, Workshop} from "grommet-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faChess, faGraduationCap, faChevronDown, faHome, faLightbulb, faPhone, faBriefcase} from "@fortawesome/free-solid-svg-icons";
+
 
 function MyMenu() {
     return (
@@ -12,7 +14,7 @@ function MyMenu() {
                       onClick: () => {},
                       icon: (
                           <Box pad="medium">
-                              <Workshop size="medium" />
+                              <FontAwesomeIcon icon={faBriefcase} size="lg" />
                           </Box>
                       ),
                   },
@@ -21,7 +23,7 @@ function MyMenu() {
                       onClick: () => {},
                       icon: (
                           <Box pad="medium">
-                              <Book size="medium" />
+                              <FontAwesomeIcon icon={faGraduationCap} size="lg" />
                           </Box>
                       ),
                   },
@@ -30,7 +32,7 @@ function MyMenu() {
                       onClick: () => {},
                       icon: (
                           <Box pad="medium">
-                              <Info size="medium" />
+                              <FontAwesomeIcon icon={faLightbulb} size="lg" />
                           </Box>
                       ),
                   },
@@ -39,7 +41,7 @@ function MyMenu() {
                       onClick: () => {},
                       icon: (
                           <Box pad="medium">
-                              <Attraction size="medium" />
+                              <FontAwesomeIcon icon={faChess} size="lg" />
                           </Box>
                       ),
                   },
@@ -48,15 +50,15 @@ function MyMenu() {
                       onClick: () => {},
                       icon: (
                           <Box pad="medium">
-                              <Phone size="medium" />
+                              <FontAwesomeIcon icon={faPhone} size="lg" />
                           </Box>
                       ),
                   },
               ]}
         >
             <Box direction="row" gap="xxsmall" pad="medium">
-                <Home size="large" />
-                <FormDown size="large" />
+                <FontAwesomeIcon icon={faHome} size="2x" />
+                <FontAwesomeIcon icon={faChevronDown} size="2x" />
             </Box>
         </Menu>
     );
