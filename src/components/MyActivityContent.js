@@ -15,16 +15,6 @@ function MyActivityContent(props) {
         <Box align="center" direction="column" margin="10%">
             <Text textAlign="center">{element_content.description}</Text>
 
-            <Box direction="row" margin="10% 10% 5% 10%">
-                <Text margin="0 5px">test</Text>
-                <Text margin="0 5px">test</Text>
-                <Text margin="0 5px">test</Text>
-                <Text margin="0 5px">test</Text>
-                <Text margin="0 5px">test</Text>
-                <Text margin="0 5px">test</Text>
-                <Text margin="0 5px">test</Text>
-            </Box>
-
             {size === "small" ? (
                 <Box direction="column" margin="30px" className="text_center">
                     <Anchor href={element_content.elementLink} target="_blank" title="En savoir plus sur l'entreprise" hoverIndicator>

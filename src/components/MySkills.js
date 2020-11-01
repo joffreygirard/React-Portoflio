@@ -1,6 +1,10 @@
 import React from "react";
 import '../App.css';
 import {Box, Carousel, Heading} from "grommet";
+
+import {faDatabase, faNetworkWired, faWifi, faServer, faPhoneVolume, faUserCog, faTools, faUsers, faFolder, faLanguage, faSort} from "@fortawesome/free-solid-svg-icons";
+import {faPhp, faSymfony, faJava, faPython, faNode, faHtml5, faCss3, faJs, faVuejs, faBootstrap, faUncharted} from "@fortawesome/free-brands-svg-icons";
+
 import MySkill from "./MySkill";
 
 
@@ -8,18 +12,45 @@ let skills = [];
 
 let skill_backend = {
     name: "BackEnd",
+    skills: [
+        faPhp,
+        faSymfony,
+        faJava,
+        faNode,
+        faPython,
+        faDatabase,
+    ],
 };
 let skill_frontend = {
     name: "FrontEnd",
+    skills: [
+        faHtml5,
+        faCss3,
+        faJs,
+        faVuejs,
+        faBootstrap,
+    ],
 };
 let skill_network = {
     name: "Réseaux",
+    skills: [
+        faNetworkWired,
+        faWifi,
+        faServer,
+        faPhoneVolume,
+        faUserCog,
+        faTools,
+    ],
 };
 let skill_softskills = {
     name: "Compétences Générales",
-};
-let skill_languages = {
-    name: "Langages",
+    skills: [
+        faFolder,
+        faUsers,
+        faLanguage,
+        faUncharted,
+        faSort,
+    ],
 };
 
 skills.push(
@@ -27,7 +58,6 @@ skills.push(
     skill_frontend,
     skill_network,
     skill_softskills,
-    skill_languages,
 );
 
 const skills_boxes = skills.map((skill) =>
