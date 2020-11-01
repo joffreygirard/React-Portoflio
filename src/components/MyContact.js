@@ -8,7 +8,7 @@ import {faMapMarker, faPhone, faEnvelope} from "@fortawesome/free-solid-svg-icon
 function MyContact() {
 
     const size = React.useContext(ResponsiveContext);
-    //const [value, setValue] = React.useState({});
+    const [value, setValue] = React.useState("Sélectionnez une option");
 
     return (
         <Box margin="75px 0 75px 0">
@@ -76,12 +76,7 @@ function MyContact() {
             }
 
             <Box margin="30px 10% 30px 10%">
-                <Form
-                    /*value={value}
-                    onChange={nextValue => setValue(nextValue)}
-                    onReset={() => setValue({})}
-                    onSubmit={({ value }) => {}}*/
-                >
+                <Form>
                     <FormField name="name" htmlfor="contact_form_name" label="Nom">
                         <TextInput id="contact_form_name"
                                    name="name"
@@ -100,9 +95,9 @@ function MyContact() {
                         <Select
                             id="contact_form_subject"
                             name="subject"
-                            options={['Sélectionnez une option', 'small', 'medium', 'large']}
-                            /*value={value}
-                            onChange={({ option }) => setValue(option)}*/
+                            options={['Sélectionnez une option', "Demande d'informations supplémentaires", 'Demande de contact', 'Autre']}
+                            value={value}
+                            onChange={({ option }) => setValue(option)}
                         />
                     </FormField>
 
@@ -113,8 +108,6 @@ function MyContact() {
                             name="description"
                             resize="vertical"
                             rows="3"
-                            /*value={value}
-                            onChange={event => setValue(event.target.value)}*/
                         />
                     </FormField>
 
