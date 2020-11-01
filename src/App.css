@@ -60,3 +60,7 @@
 .heading_width {
     max-width: 100%!important;
 }
+.text_center {
+    text-align: center;
+}
+

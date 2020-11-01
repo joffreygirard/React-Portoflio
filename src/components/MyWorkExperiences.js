@@ -20,7 +20,7 @@ let company_infopolis = {
     duration: "En cours",
     jobDescription: "Gestion de projet, Webmastering Wordpress et Prestashop, développement d'application Web sous Symfony, développement Android & IOS",
     technologies: [],
-    companyDetails: {},
+    companyLink: "https://www.infopolis.fr",
 };
 let company_bldeveloppement = {
     name: "BLDEVELOPPEMENT",
@@ -32,7 +32,7 @@ let company_bldeveloppement = {
     duration: "12 mois",
     jobDescription: "Développement, maintenance d'application Web et CRM Symfony en apprentissage et connexions aux API (Hubspot, Lyyti, Sirene...)",
     technologies: [],
-    companyDetails: {},
+    companyLink: "https://www.bldeveloppement.fr",
 };
 let company_cmrp = {
     name: "CMRP",
@@ -44,7 +44,7 @@ let company_cmrp = {
     duration: "6 semaines",
     jobDescription: "Création de site Web de gestion d'entreprise, type CRM, gestion de base de données (HTML, CSS, Javascript, jQuery, PHP, SQL...)",
     technologies: [],
-    companyDetails: {},
+    companyLink: "https://www.cmrp.fr",
 };
 let company_eisge = {
     name: "EISGE",
@@ -56,7 +56,7 @@ let company_eisge = {
     duration: "8 semaines",
     jobDescription: "Création d'un site Web de présentation d'une association, collecte de données à partir d'une API Facebook (HTML, CSS, Bootstrap, jQuery, JSON)",
     technologies: [],
-    companyDetails: {},
+    companyLink: "http://www.kalifast.com",
 };
 
 experiences.push(

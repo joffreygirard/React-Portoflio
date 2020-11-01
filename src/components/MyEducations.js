@@ -25,7 +25,7 @@ let school_ynov = {
         "dénommée Expert Informatique et Systèmes d'Information. La vocation d’Ynov est de proposer des formations " +
         "adaptées aux besoins en compétences des entreprises aujourd’hui.",
     technologies: [],
-    companyDetails: {},
+    companyLink: "https://www.ynov.com/campus/toulouse/",
 };
 let school_iut_orleans = {
     name: "Univerité d'Orléans",
@@ -40,7 +40,7 @@ let school_iut_orleans = {
         " connexions persistantes) ainsi que l'utilisation de Composants Web sont abordés en détail ainsi que l'administration" +
         " de serveurs, l'usage des conteneurs dans le cadre d'applications Web et les problématiques de sécurité.",
     technologies: [],
-    companyDetails: {},
+    companyLink: "https://www.univ-orleans.fr/fr/iut-orleans",
 };
 let school_durzy = {
     name: "Lycée Durzy",
@@ -56,7 +56,7 @@ let school_durzy = {
         "en état de fonctionnement des réseaux, à la sécurisation ainsi qu'au bon fonctionnement de la programmation " +
         "(client/serveur, cloud computing).",
     technologies: [],
-    companyDetails: {},
+    companyLink: "http://www.lyceedurzy.com",
 };
 let school_lpcb = {
     name: "Lycée Professionnel Château Blanc",
@@ -72,7 +72,7 @@ let school_lpcb = {
         "En ce qui concerne le contenu des enseignements, il comprend des matières générales et des matières techniques, " +
         "spécifiques à la formation.",
     technologies: [],
-    companyDetails: {},
+    companyLink: "https://www.lycee-chateaublanc.net",
 };
 
 educations.push(

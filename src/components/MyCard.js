@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import {Box, Button, Image, Text} from "grommet";
+import {Anchor, Box, Button, Image, Text} from "grommet";
 
 function MyCard() {
     return (
@@ -16,11 +16,13 @@ function MyCard() {
                 objectifs. Mes loisirs, le football, la musculation, cinéma, séries, musiques.
             </Text>
 
-            <Button primary
-                    margin="40px 0 0 0"
-                    label="Contactez moi !"
-                    color="#000394"
-            />
+            <Anchor href="/contact">
+                <Button primary
+                        margin="40px 0 0 0"
+                        label="Contactez moi !"
+                        color="#000394"
+                />
+            </Anchor>
         </Box>
     );
 }
