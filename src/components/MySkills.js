@@ -1,6 +1,6 @@
 import React from "react";
 import '../App.css';
-import {Box, Carousel, Text, Heading, Tab} from "grommet";
+import {Box, Carousel, Heading} from "grommet";
 import MySkill from "./MySkill";
 
 
@@ -36,8 +36,8 @@ const skills_boxes = skills.map((skill) =>
 
 function MySkills() {
     return (
-        <Box width="auto" overflow="" pad="medium">
-            <Heading textAlign="center">Mes compétences</Heading>
+        <Box width="auto" pad="medium" margin="75px 0 0 0">
+            <Heading className="heading_width" textAlign="center">Mes compétences</Heading>
 
             <Carousel>
                 {skills_boxes}

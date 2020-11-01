@@ -35,11 +35,11 @@ function MyWorkExperience(props) {
                   gap="small"
             >
 
-                <Box gridArea="work-title" background="light-5">
+                <Box gridArea="work-title" background="#c9caff" className="border_radius_right">
                     <MyActivityHead element_head={element_head} />
                 </Box>
 
-                <Box background="light-2" gridArea="work-content">
+                <Box gridArea="work-content">
                     <MyActivityContent element_content={element_content} />
                 </Box>
 

@@ -44,3 +44,19 @@
 .image_max_width_100 {
     max-width: 100%;
 }
+.border_radius_right {
+    border-radius: 0 75px 75px 0;
+}
+.border_radius_left {
+    border-radius: 75px 0 0 75px;
+}
+.color_theme_dark_blue {
+    background-color: #000394;
+    color: white;
+}
+.link_white {
+    color: white;
+}
+.heading_width {
+    max-width: 100%!important;
+}

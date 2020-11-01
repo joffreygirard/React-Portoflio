@@ -19,6 +19,7 @@ function MyCard() {
             <Button primary
                     margin="40px 0 0 0"
                     label="Contactez moi !"
+                    color="#000394"
             />
         </Box>
     );

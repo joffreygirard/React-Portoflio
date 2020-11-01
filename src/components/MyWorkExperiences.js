@@ -74,8 +74,8 @@ const experiences_tabs = experiences.map((company) =>
 
 function MyWorkExperiences() {
     return (
-        <Box>
-            <Heading textAlign="center">Mes Expériences Professionnelles</Heading>
+        <Box margin="75px 0 0 0">
+            <Heading className="heading_width" textAlign="center">Mes Expériences Professionnelles</Heading>
             <Tabs>
                 {experiences_tabs}
             </Tabs>

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import {Box, Grid, Heading, Image, Button, Text, Layer} from "grommet";
+import {Box, Grid, } from "grommet";
 
 import MyActivityHead from "./MyActivityHead";
 import MyActivityContent from "./MyActivityContent";
@@ -35,11 +35,11 @@ function MyEducation(props) {
                   gap="small"
             >
 
-                <Box background="light-2" gridArea="work-content">
+                <Box gridArea="work-content">
                     <MyActivityContent element_content={element_content} />
                 </Box>
 
-                <Box gridArea="work-title" background="light-5">
+                <Box gridArea="work-title" background="#c9caff" className="border_radius_left">
                     <MyActivityHead element_head={element_head} />
                 </Box>
 

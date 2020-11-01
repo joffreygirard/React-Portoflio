@@ -14,7 +14,7 @@ function MyActivityHead(props) {
                    className="image_max_width_100"
             />
 
-            <Heading size="small" margin="0 0 0 0" textAlign="center">{element_head.name}</Heading>
+            <Heading className="heading_width" size="small" margin="0 0 0 0" textAlign="center">{element_head.name}</Heading>
 
             <Text margin="30px 0 0 0" textAlign="center">{element_head.title}</Text>
             <Text textAlign="center">{element_head.description}</Text>

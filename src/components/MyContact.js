@@ -10,8 +10,8 @@ function MyContact() {
     //const [value, setValue] = React.useState({});
 
     return (
-        <Box>
-            <Heading textAlign="center">Contactez-moi !</Heading>
+        <Box margin="75px 0 0 0">
+            <Heading className="heading_width" textAlign="center">Contactez-moi !</Heading>
 
             <Grid rows={["small"]}
                   columns={['1/3']}
@@ -21,7 +21,7 @@ function MyContact() {
                   gap="small"
             >
 
-                <Box gridArea="contact-address" background="light-2" direction="column">
+                <Box gridArea="contact-address" direction="column">
                     <Text textAlign="center"><FontAwesomeIcon icon={faMapMarker} size="4x" /></Text>
                     <Box direction="column" margin="30px 0 0 0">
                         <Text textAlign="center">27 Chemin de la Garonne</Text>
@@ -29,12 +29,12 @@ function MyContact() {
                     </Box>
                 </Box>
 
-                <Box gridArea="contact-mail" background="light-2" direction="column">
+                <Box gridArea="contact-mail" direction="column">
                     <Text textAlign="center"><FontAwesomeIcon icon={faEnvelope} size="4x" /></Text>
                     <Text textAlign="center" margin="30px 0 0 0">joffrey.girard2@gmail.com</Text>
                 </Box>
 
-                <Box gridArea="contact-phone" background="light-2" direction="column">
+                <Box gridArea="contact-phone" direction="column">
                     <Text textAlign="center"><FontAwesomeIcon icon={faPhone} size="4x" /></Text>
                     <Text textAlign="center" margin="30px 0 0 0">06.83.65.08.15</Text>
                 </Box>
@@ -85,7 +85,7 @@ function MyContact() {
                     </FormField>
 
                     <Box direction="row" gap="medium">
-                        <Button type="submit" primary label="Envoyer" />
+                        <Button type="submit" primary label="Envoyer" color="#000394" />
                     </Box>
                 </Form>
             </Box>

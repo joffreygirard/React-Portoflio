@@ -4,10 +4,6 @@ import {Box, Button, Text, Layer} from "grommet";
 
 
 function MyActivityContent(props) {
-
-    const [showCompany, setShowCompany] = React.useState();
-    const [showLinkedin, setShowLinkedin] = React.useState();
-
     let element_content = props.element_content;
 
     return (
@@ -25,25 +21,9 @@ function MyActivityContent(props) {
             </Box>
 
             <Box direction="row" margin="30px">
-                <Button label="En savoir plus sur l'entreprise" margin="10px" onClick={() => setShowCompany(true)} />
-                {showCompany && (
-                    <Layer
-                        onEsc={() => setShowCompany(false)}
-                        onClickOutside={() => setShowCompany(false)}
-                    >
-                        <Button label="close" onClick={() => setShowCompany(false)} />
-                    </Layer>
-                )}
+                <Button primary label="En savoir plus sur l'entreprise" margin="10px" color="#000394" />
 
-                <Button label="En savoir plus sur mon compte LinkedIn" margin="10px" onClick={() => setShowLinkedin(true)} />
-                {showLinkedin && (
-                    <Layer
-                        onEsc={() => setShowLinkedin(false)}
-                        onClickOutside={() => setShowLinkedin(false)}
-                    >
-                        <Button label="fermer" onClick={() => setShowLinkedin(false)} />
-                    </Layer>
-                )}
+                <Button primary label="En savoir plus sur mon compte LinkedIn" margin="10px" color="#000394" />
             </Box>
         </Box>
     );
