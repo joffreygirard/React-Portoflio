@@ -90,7 +90,7 @@ const educations_tabs = educations.map((school) =>
 
 function MyEducations() {
     return (
-        <Box margin="75px 0 0 0">
+        <Box margin="75px 0 75px 0">
             <Heading className="heading_width" textAlign="center">Ma Formation</Heading>
             <Tabs>
                 {educations_tabs}

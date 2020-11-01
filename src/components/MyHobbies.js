@@ -20,7 +20,7 @@ function MyHobbies() {
                   ['hobby-space', 'hobby-music', 'hobby-party'],
               ]}
               gap="small"
-              margin="75px 0 0 0"
+              margin="75px 0 75px 0"
         >
 
             <Box gridArea="hobby-title">

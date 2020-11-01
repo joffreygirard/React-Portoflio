@@ -3,6 +3,7 @@ import '../App.css';
 import {Box, Menu} from "grommet";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChess, faGraduationCap, faChevronDown, faHome, faLightbulb, faPhone, faBriefcase} from "@fortawesome/free-solid-svg-icons";
+import {Link} from "react-router-dom";
 
 
 function MyMenu() {
@@ -11,7 +12,9 @@ function MyMenu() {
               items={[
                   {
                       label: <Box alignSelf="center">Mes Expériences</Box>,
-                      onClick: () => {},
+                      onClick: () => {
+                          window.location.href='/work-experiences'
+                      },
                       icon: (
                           <Box pad="medium">
                               <FontAwesomeIcon icon={faBriefcase} size="lg" />
@@ -20,7 +23,9 @@ function MyMenu() {
                   },
                   {
                       label: <Box alignSelf="center">Ma Formation</Box>,
-                      onClick: () => {},
+                      onClick: () => {
+                          window.location.href='/educations'
+                      },
                       icon: (
                           <Box pad="medium">
                               <FontAwesomeIcon icon={faGraduationCap} size="lg" />
@@ -29,7 +34,9 @@ function MyMenu() {
                   },
                   {
                       label: <Box alignSelf="center">Mes Compétences</Box>,
-                      onClick: () => {},
+                      onClick: () => {
+                          window.location.href='/skills'
+                      },
                       icon: (
                           <Box pad="medium">
                               <FontAwesomeIcon icon={faLightbulb} size="lg" />
@@ -38,7 +45,9 @@ function MyMenu() {
                   },
                   {
                       label: <Box alignSelf="center">Mes Loisirs</Box>,
-                      onClick: () => {},
+                      onClick: () => {
+                          window.location.href='/hobbies'
+                      },
                       icon: (
                           <Box pad="medium">
                               <FontAwesomeIcon icon={faChess} size="lg" />
@@ -47,7 +56,9 @@ function MyMenu() {
                   },
                   {
                       label: <Box alignSelf="center">Me Contacter</Box>,
-                      onClick: () => {},
+                      onClick: () => {
+                          window.location.href='/contact'
+                      },
                       icon: (
                           <Box pad="medium">
                               <FontAwesomeIcon icon={faPhone} size="lg" />

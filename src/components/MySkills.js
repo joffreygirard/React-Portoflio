@@ -36,7 +36,7 @@ const skills_boxes = skills.map((skill) =>
 
 function MySkills() {
     return (
-        <Box width="auto" pad="medium" margin="75px 0 0 0">
+        <Box width="auto" pad="medium" margin="75px 0 75px 0">
             <Heading className="heading_width" textAlign="center">Mes compétences</Heading>
 
             <Carousel>

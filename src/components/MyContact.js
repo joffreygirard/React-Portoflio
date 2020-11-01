@@ -10,7 +10,7 @@ function MyContact() {
     //const [value, setValue] = React.useState({});
 
     return (
-        <Box margin="75px 0 0 0">
+        <Box margin="75px 0 75px 0">
             <Heading className="heading_width" textAlign="center">Contactez-moi !</Heading>
 
             <Grid rows={["small"]}
